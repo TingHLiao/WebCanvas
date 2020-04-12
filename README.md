@@ -29,26 +29,20 @@
 #### Tools Overview
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
 
--  pencil
-- <img src='./markdown_img/text2.png' style="float:left">&nbsp; text
-- <img src='./markdown_img/save2.png' style="float:left">&nbsp; save
+- <img src='./markdown_img/pen.png'   style="float:left">&nbsp;pencil
+- <img src='./markdown_img/line.png'  style="float:left">&nbsp;line
+- <img src='./markdown_img/spray.png' style="float:left">&nbsp;spray brush
+- <img src='./markdown_img/cir.png'   style="float:left">&nbsp;circle
+- <img src='./markdown_img/rect.png'  style="float:left">&nbsp;rectangle
+- <img src='./markdown_img/tri.png'   style="float:left">&nbsp;triangle
+- <img src='./img/rubber_mouse.png'   style="float:left">&nbsp;eraser</li>
+- <img src='./markdown_img/text2.png' style="float:left">&nbsp;text
+- <img src='./markdown_img/img.png'   style="float:left">&nbsp;load image
+- <img src='./markdown_img/refresh.png' style="float:left">&nbsp;claer all
+- <img src='./markdown_img/undo.png'  style="float:left">&nbsp;undo
+- <img src='./markdown_img/redo.png'  style="float:left">&nbsp;redo
+- <img src='./markdown_img/save2.png'  style="float:left">&nbsp;save
 
-<ul>
-    <li><i class="material-icons">&#xe150;</i>pencil</li>
-    <li><i class="material-icons">&#xe6e1;</i>line</li>
-    <li><i class="material-icons">&#xe3e4;</i>spray brush</li>
-    <li><i class="material-icons">&#xe061;</i>circle</li>
-    <li><i class="material-icons">&#xe047;</i>rectangle</li>
-    <li><i class="material-icons">play_arrow</i>triangle</li>
-    <li><img src='./img/rubber_mouse.png'>  eraser</li>
-    <li><i class="material-icons">&#xe245;</i> text</li>
-    <li><i class="material-icons">&#xe251;</i>load image</li>
-    <li><i class="material-icons">&#xe86a;</i> clear all</li>
-    <li><i class="material-icons">&#xe166;</i> undo</li>
-    <li><i class="material-icons">&#xe15a;</i> redo</li>
-    <li><img src='./markdown_img/save.png'>save</li>
-    <li><i class="material-icons">&#xe2c4;</i>save</li>
-</ul>
 
 #### Basic Tools Effect
     
