@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> ef50579d22e4d1298e6a2c551fdc762e73348469
 # Software Studio 2020 Spring
 ## Assignment 01 Web Canvas
 
@@ -30,10 +33,13 @@
 ### How to use 
 #### Tools Overview
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+<<<<<<< HEAD
 
 -  pencil
 - <img src='./markdown_img/text2.png' style="float:left">&nbsp; text
 - <img src='./markdown_img/save2.png' style="float:left">&nbsp; save
+=======
+>>>>>>> ef50579d22e4d1298e6a2c551fdc762e73348469
 <ul>
     <li><i class="material-icons">&#xe150;</i>pencil</li>
     <li><i class="material-icons">&#xe6e1;</i>line</li>
@@ -42,12 +48,20 @@
     <li><i class="material-icons">&#xe047;</i>rectangle</li>
     <li><i class="material-icons">play_arrow</i>triangle</li>
     <li><img src='./img/rubber_mouse.png'>  eraser</li>
+<<<<<<< HEAD
     <li>![](./markdown_img/text.png =20x) text</li>
+=======
+    <li><i class="material-icons">&#xe245;</i> text</li>
+>>>>>>> ef50579d22e4d1298e6a2c551fdc762e73348469
     <li><i class="material-icons">&#xe251;</i>load image</li>
     <li><i class="material-icons">&#xe86a;</i> clear all</li>
     <li><i class="material-icons">&#xe166;</i> undo</li>
     <li><i class="material-icons">&#xe15a;</i> redo</li>
+<<<<<<< HEAD
     <li><img src='./markdown_img/save.png'>save</li>
+=======
+    <li><i class="material-icons">&#xe2c4;</i>save</li>
+>>>>>>> ef50579d22e4d1298e6a2c551fdc762e73348469
 </ul>
 
 #### Basic Tools Effect
