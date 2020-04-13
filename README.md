@@ -91,8 +91,14 @@ You can choice tools wanted in the tool bar on the left. The blue frame will sho
 
 
 ### Function description
+I have done 2 bouns functions -  line and spray gun.  
 
-    Decribe your bouns function and how to use it.
+<img src='./img/line_mouse.png' style="float:left">&nbsp;line:  
+&emsp;&ensp; Draw a straight line from the first click to mouseup. Can also change color and width by the selector and slider.
+
+<img src='./img/spray_mouse.png' style="float:left">&nbsp;spray gun:  
+&emsp;&ensp; Drawing as a spray gun. Achieved it by filling area around mouse point with random pixels. And since painting is a constant interval while the mouse is pressed. So I set up a timer. This way, certain areas can be made darker by "holding a spray" there longer. And it can also change color and width by the selector and slider. Following image is the effect overview.  
+> <img src='./markdown_img/effect_spray.png'>
 
 ### Gitlab page link
 
