@@ -26,9 +26,10 @@
 ---
 
 ### How to use 
-#### Tools Overview
-<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> 
+#### Interface Overview
+<img src='./markdown_img/overview.png'>
 
+#### Tools Overview
 - <img src='./markdown_img/pen.png'   style="float:left">&nbsp;pencil
 - <img src='./markdown_img/line.png'  style="float:left">&nbsp;line
 - <img src='./markdown_img/spray.png' style="float:left">&nbsp;spray brush
