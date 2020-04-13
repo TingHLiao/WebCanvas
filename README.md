@@ -77,7 +77,7 @@ You can choice tools wanted in the tool bar on the left. The blue frame will sho
 
 > <img src='./markdown_img/palette.png' style="float:left">&nbsp;color selector  
 >
->  &emsp;&ensp; All tools above can change to different color by the color selector on the right menu. You can choose any color then text or paint with it.
+>  &emsp;&ensp; All tools above can change to different color by the color selector on the right menu. You can choose any color then text or paint with it.  
 > <img src='./markdown_img/color.png'>
 
 <img src='./markdown_img/img.png'   style="float:left">&nbsp; load image:  
