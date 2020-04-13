@@ -41,7 +41,7 @@
 - <img src='./markdown_img/refresh.png' style="float:left">&nbsp;claer all
 - <img src='./markdown_img/undo.png'  style="float:left">&nbsp;undo
 - <img src='./markdown_img/redo.png'  style="float:left">&nbsp;redo
-- <img src='./markdown_img/save2.png'  style="float:left">&nbsp;save
+- <img src='./markdown_img/save2.png' style="float:left">&nbsp;save
 
 
 #### Basic Tools Effect
