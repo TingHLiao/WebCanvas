@@ -65,21 +65,20 @@ You can choice tools wanted in the tool bar on the left. The blue frame will sho
 &emsp;&ensp; Clean any drawing on the canvas.
 > <img src='./markdown_img/slider.png' style="float:left">&nbsp; width slider  
 >
->  &emsp;&ensp; You can adjust the width of pencil and eraser on the right slider.
+>  &emsp;&ensp; You can adjust the width of pencil and eraser on the right slider. And the dot above will show the actually width.  
+> <img src='./markdown_img/width.png'>
 
 <img src='./markdown_img/text2.png' style="float:left">&nbsp;text  
 &emsp;&ensp; Put text on the canvas. 
 > <img src='./markdown_img/font_menu.png' style="float:left">&nbsp; font menu  
 >
->  &emsp;&ensp; You can choose different text size and style on the right menu.
+>  &emsp;&ensp; You can choose different text size and style on the right menu.  
+> <img src='./markdown_img/font.png'>
 
-> <img src='./markdown_img/color.png' style="float:right">
 > <img src='./markdown_img/palette.png' style="float:left">&nbsp;color selector  
 >
 >  &emsp;&ensp; All tools above can change to different color by the color selector on the right menu. You can choose any color then text or paint with it.
-<br />  
-<br />  
-<br />  
+> <img src='./markdown_img/color.png'>
 
 <img src='./markdown_img/img.png'   style="float:left">&nbsp; load image:  
 &emsp;&ensp; Load images you choose onto the canvas, and the canvas will be changed to the size of loaded image. More, still can paint,text,erase on the image.
