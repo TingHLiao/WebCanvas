@@ -46,7 +46,7 @@
 
 
 #### Basic Tools Effect
-You can choice tools wanted in the tool bar on the left. The blue frame will show the active tool. And the cursor will switch to corresponded icon.
+You can choice tools wanted in the tool bar on the left. The blue frame will show the active tool. And the cursor will switch to corresponding icon.
 
 <img src='./img/pen_mouse.png' style="float:left">&nbsp;pencil:  
 &emsp;&ensp; Default tool at the beginning, you can draw line on the canvas with it.
@@ -64,20 +64,17 @@ You can choice tools wanted in the tool bar on the left. The blue frame will sho
 <img src='./img/rubber_mouse.png'   style="float:left">&nbsp;eraser  
 &emsp;&ensp; Clean any drawing on the canvas.
 > <img src='./markdown_img/slider.png' style="float:left">&nbsp; width slider  
->
->  &emsp;&ensp; You can adjust the width of pencil and eraser on the right slider. And the dot above will show the actually width.  
+>  You can adjust the width of pencil and eraser on the right slider. And the dot above will show the actually width.  
 > <img src='./markdown_img/width.png'>
 
 <img src='./markdown_img/text2.png' style="float:left">&nbsp;text  
 &emsp;&ensp; Put text on the canvas. 
 > <img src='./markdown_img/font_menu.png' style="float:left">&nbsp; font menu  
->
->  &emsp;&ensp; You can choose different text size and style on the right menu.  
+>  You can choose different text size and style on the right menu.  
 > <img src='./markdown_img/font.png'>
 
 > <img src='./markdown_img/palette.png' style="float:left">&nbsp;color selector  
->
->  &emsp;&ensp; All tools above can change to different color by the color selector on the right menu. You can choose any color then text or paint with it.  
+>  All tools above can change to different color by the color selector on the right menu. You can choose any color then text or paint with it.  
 > <img src='./markdown_img/color.png'>
 
 <img src='./markdown_img/img.png'   style="float:left">&nbsp; load image:  
@@ -90,7 +87,7 @@ You can choice tools wanted in the tool bar on the left. The blue frame will sho
 &emsp;&ensp; Return to the beginning canvas. However, if you click it accidently, you can still go back to the last paint by "undo".
 
 <img src='./markdown_img/save2.png' style="float:left">&nbsp;save  
-&emsp;&ensp; You can save you gorgeous painting by clicking this button, then the canvas will be saved to ./download as "MyGorgeousCanvas.png".
+&emsp;&ensp; You can save your gorgeous painting by clicking this button, then the canvas will be saved to ./download as "MyGorgeousCanvas.png".
 
 
 ### Function description
