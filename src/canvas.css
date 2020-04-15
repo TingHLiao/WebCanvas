@@ -45,9 +45,9 @@ ul {
     margin-top: 70px;
     margin-left: 250px;
     border-width: 2px 3px 2px 5px;
-    border-radius: 90% 6% 93% 5% / 5% 94% 7% 95%;
+    border-radius: 90% 4% 80% 2% / 3% 94% 4% 95%;
     border: dashed #666 2px;
-    transform: rotate(2deg);
+    
     background-color: #fff;
     cursor: url("../img/pen_mouse.png"), default;
 }
@@ -81,6 +81,7 @@ ul {
     margin: 6px;
     transition: 0.4s;
     border: 2px solid transparent;
+    
 }
 .container i:hover {
     border-radius: 4px;

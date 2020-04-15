@@ -102,7 +102,7 @@ document.querySelector(".container").addEventListener( "click", ( e ) => {
             Mouse('url("../img/tri_mouse.png"),default');
             break;
         case "eraser":
-            painting = "pen";
+            painting = "eraser";
             ctx.globalCompositeOperation = 'destination-out';
             isEraser = true;
             classToggle("icon-eraser");
@@ -110,6 +110,9 @@ document.querySelector(".container").addEventListener( "click", ( e ) => {
             break;
         case "delete":
             del();
+            if(painting != "eraser"){
+                ctx.globalCompositeOperation = 'source-over';
+            }
             break;
         case "text":
             Mouse("text");
@@ -133,38 +136,11 @@ document.querySelector(".container").addEventListener( "click", ( e ) => {
 } , false)
 
 canvas.addEventListener('mouseout', () => isDrawing = false);
-canvas.addEventListener('mouseup', (e) => {
+canvas.addEventListener('mouseup', up);
+async function up(e) {
     clearTimeout(timeout);
-    const { x, y } = points[ points.length - 1 ];
-    points.push({x, y});
-    if( painting === "line"){
-        drawLine(last, {x, y});
-    } else if(painting === "circle"){
-        ctx.putImageData(canvasHistory[step - 1 ], 0, 0);
-        ctx.beginPath(); 
-        ctx.fillStyle = attributre.style;
-        ctx.arc(last.x, last.y, Math.sqrt(Math.pow((x-last.x), 2) + Math.pow((y-last.y), 2)) , 0, 2*Math.PI, true);
-        ctx.fill();
-    } else if(painting === "rect"){
-        ctx.putImageData(canvasHistory[step - 1 ], 0, 0);
-        ctx.beginPath(); 
-        ctx.fillStyle = attributre.style;
-        ctx.fillRect(last.x, last.y, x-last.x, y-last.y);
-    } else if(painting === "tran"){
-        ctx.putImageData(canvasHistory[step - 1 ], 0, 0);
-        ctx.beginPath(); 
-        ctx.strokeStyle = attributre.style;
-        ctx.fillStyle = attributre.style;
-        ctx.moveTo(last.x, last.y);
-        ctx.lineTo(x, last.y);
-        ctx.lineTo(last.x+(x-last.x)/2, y);
-        ctx.fill();
-    } else if (painting==="pen" && points.length > 3) {
-        const lastTwoPoints = points.slice(-2);
-        const controlPoint = lastTwoPoints[0];
-        const endPoint = lastTwoPoints[1];
-        drawpen(last, controlPoint, endPoint);
-    }
+    await lastdraw(e);
+
     if(painting != "text"){
         ctx.restore();
         saveToHistory();
@@ -172,7 +148,42 @@ canvas.addEventListener('mouseup', (e) => {
         isDrawing = false;
         points = [];
     }
-});
+};
+function lastdraw(e){
+    return new Promise((resolve, reject) => {
+        const { x, y } = points[ points.length - 1 ];
+        points.push({x, y});
+        if( painting === "line"){
+            drawLine(last, {x, y});
+        } else if(painting === "circle"){
+            ctx.putImageData(canvasHistory[step - 1 ], 0, 0);
+            ctx.beginPath(); 
+            ctx.fillStyle = attributre.style;
+            ctx.arc(last.x, last.y, Math.sqrt(Math.pow((x-last.x), 2) + Math.pow((y-last.y), 2)) , 0, 2*Math.PI, true);
+            ctx.fill();
+        } else if(painting === "rect"){
+            ctx.putImageData(canvasHistory[step - 1 ], 0, 0);
+            ctx.beginPath(); 
+            ctx.fillStyle = attributre.style;
+            ctx.fillRect(last.x, last.y, x-last.x, y-last.y);
+        } else if(painting === "tran"){
+            ctx.putImageData(canvasHistory[step - 1 ], 0, 0);
+            ctx.beginPath(); 
+            ctx.strokeStyle = attributre.style;
+            ctx.fillStyle = attributre.style;
+            ctx.moveTo(last.x, last.y);
+            ctx.lineTo(x, last.y);
+            ctx.lineTo(last.x+(x-last.x)/2, y);
+            ctx.fill();
+        } else if ((painting==="pen"||painting==="eraser") && points.length > 3) {
+            const lastTwoPoints = points.slice(-2);
+            const controlPoint = lastTwoPoints[0];
+            const endPoint = lastTwoPoints[1];
+            drawpen(last, controlPoint, endPoint);
+        }
+        resolve();
+    });
+}
 
 let t1=0, t2=0;
 canvas.addEventListener('mousedown', (e) => {
@@ -235,7 +246,7 @@ function draw(e) {
         ctx.lineTo(x, last.y);
         ctx.lineTo(last.x+(x-last.x)/2, y);
         ctx.fill();
-    } else if (painting==="pen" && points.length > 3) {
+    } else if ((painting==="pen"||painting==="eraser") && points.length > 3) {
         const lastTwoPoints = points.slice(-2);
         const controlPoint = lastTwoPoints[0];
         const endPoint = {
@@ -353,7 +364,7 @@ function save(){
     let img = document.getElementById('myCanvas').toDataURL(); 
     let save_link = document.createElement('a');
     save_link.href = img;
-    save_link.download = 'myCanvas.png';
+    save_link.download = 'MyGorgeousCanvas.png';
     save_link.click();
 }
 
