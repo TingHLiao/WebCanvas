@@ -74,39 +74,39 @@ document.querySelector(".container").addEventListener( "click", ( e ) => {
         case "pen":
             painting = "pen";
             classToggle("icon-pen");
-            Mouse('url("../img/pen_mouse.png"),default');
+            Mouse('url("./img/pen_mouse.png"),default');
             break;
         case "line":
             painting = "line";
             classToggle("icon-line");
-            Mouse('url("../img/line_mouse.png"),default');
+            Mouse('url("./img/line_mouse.png"),default');
             break;
         case "spray":
             painting = "spray";
             classToggle("icon-spray");
-            Mouse('url("../img/spray_mouse.png"),default');
+            Mouse('url("./img/spray_mouse.png"),default');
             break;
         case "circle":
             painting = "circle";
             classToggle("icon-cir");
-            Mouse('url("../img/cir_mouse.png"),default');
+            Mouse('url("./img/cir_mouse.png"),default');
             break;
         case "rect":
             painting = "rect";
             classToggle("icon-rect");
-            Mouse('url("../img/rec_mouse.png"),default');
+            Mouse('url("./img/rec_mouse.png"),default');
             break;
         case "tran":
             painting = "tran";
             classToggle("icon-tran");
-            Mouse('url("../img/tri_mouse.png"),default');
+            Mouse('url("./img/tri_mouse.png"),default');
             break;
         case "eraser":
             painting = "eraser";
             ctx.globalCompositeOperation = 'destination-out';
             isEraser = true;
             classToggle("icon-eraser");
-            Mouse('url("../img/rubber_mouse.png"),default');
+            Mouse('url("./img/rubber_mouse.png"),default');
             break;
         case "delete":
             del();

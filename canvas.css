@@ -1,7 +1,7 @@
 body{
     margin:0px;
     padding:0px;
-    background:#eeebe7 url("../img/back.jpg") center center fixed no-repeat;
+    background:#eeebe7 url("./img/back.jpg") center center fixed no-repeat;
     background-size: cover;
 }
 
@@ -32,7 +32,7 @@ body{
 }
 ul {
     font-size: 20px;
-    list-style-image: url('../img/list.png');
+    list-style-image: url('./img/list.png');
     margin: -22px 0 0 0;
     padding-left: 74px;
 }
@@ -49,7 +49,7 @@ ul {
     border: dashed #666 2px;
     
     background-color: #fff;
-    cursor: url("../img/pen_mouse.png"), default;
+    cursor: url("./img/pen_mouse.png"), default;
 }
 
 .popup-parent {
