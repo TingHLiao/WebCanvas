@@ -59,7 +59,7 @@ You can choice tools wanted in the tool bar on the left. The blue frame will sho
 &emsp;&ensp; Draw rectangles from the first click to mouseup.
 
 <img src='./img/tri_mouse.png'   style="float:left">&nbsp;triangle  
-&emsp;&ensp; Draw triangles from the first click to mouseup with base on the x-axis movement and height on the y-axis movement.
+&emsp;&ensp; Draw triangles from the first click to mouseup with base on the x-axis movement and height on the y-axis movement. So you can get a normal triangle while moving your mouse up, and get an inverted triangle while moving your mouse down.
 
 <img src='./img/rubber_mouse.png'   style="float:left">&nbsp;eraser  
 &emsp;&ensp; Clean any drawing on the canvas.
@@ -78,7 +78,8 @@ You can choice tools wanted in the tool bar on the left. The blue frame will sho
 > <img src='./markdown_img/color.png'>
 
 <img src='./markdown_img/img.png'   style="float:left">&nbsp; load image:  
-&emsp;&ensp; Load images you choose onto the canvas, and the canvas will be changed to the size of loaded image. More, still can paint,text,erase on the image.
+&emsp;&ensp; Get to load images you choose onto the canvas, and the canvas will be changed to the size of loaded image. More, still can paint,text,erase on the image. See the folowing image for overview.
+> <img src='./markdown_img/effect_load.png'>
 
 <img src='./markdown_img/undo.png'  style="float:left">&nbsp;undo  / <img src='./markdown_img/redo.png'  style="overflow:auto">&nbsp;redo  
 &emsp;&ensp; Reverse any mistake by "undo" or re-apply by "redo".
@@ -97,7 +98,7 @@ I have done 2 bouns functions -  line and spray gun.
 &emsp;&ensp; Draw a straight line from the first click to mouseup. Can also change color and width by the selector and slider.
 
 <img src='./img/spray_mouse.png' style="float:left">&nbsp;spray gun:  
-&emsp;&ensp; Drawing as a spray gun. Achieved it by filling area around mouse point with random pixels. And since painting is a constant interval while the mouse is pressed. So I set up a timer. This way, certain areas can be made darker by "holding a spray" there longer. And it can also change color and width by the selector and slider. Following image is the effect overview.  
+&emsp;&ensp; Drawing as a spray gun. Achieved it by filling area around mouse point with random pixels. And since painting is a constant interval while the mouse is pressed. So I set up a timer. This way, certain areas can be made darker by "holding a spray" there longer. And it can also change color and width by the selector and slider. Get effect overview from the following image.  
 > <img src='./markdown_img/effect_spray.png'>
 
 ### Gitlab page link
