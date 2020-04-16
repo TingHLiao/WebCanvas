@@ -49,7 +49,7 @@
 #### Basic Tools Effect
 You can choice tools wanted in the tool bar on the left. The blue frame will show the active tool. And the cursor will switch to corresponding icon.
 
-![](https://i.imgur.com/P7RJFSV.png)&nbsp;pencil:
+![](https://i.imgur.com/P7RJFSV.png)&nbsp;pencil:  
 &emsp;&ensp; Default tool at the beginning, you can draw line on the canvas with it.
 
 
