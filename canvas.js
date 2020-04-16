@@ -334,30 +334,30 @@ text_input.addEventListener("keyup", function(event) {
   }
 });
 
-async function loadImg() {
+function loadImg() {
     let storecCheck = step;
-    document.querySelector('#file_input').onchange = function(){
+    let file =  document.querySelector('#file_input');
+    file.onchange = function(){
         let img = new Image();
-        img.onload = function(){
-            canvas.width = this.width;
-            canvas.height = this.height;
-            ctx.drawImage(this, 0,0);
+        img.onload = async function(){
+            await getImg(img);
             ctx.restore();
             saveToHistory();
             last = null;
             isDrawing = false;
             points = [];
-            if(step == storecCheck){
-                ctx.restore();
-                saveToHistory();
-                last = null;
-                isDrawing = false;
-                points = [];
-            }
         }
         img.src = URL.createObjectURL(this.files[0]);
         this.value = "";
     }
+}
+function getImg(img){
+    return new Promise((resolve, reject) => {
+        canvas.width = img.width;
+        canvas.height = img.height;
+        ctx.drawImage(img, 0,0);
+        resolve();
+    });
 }
 
 function save(){
