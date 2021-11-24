@@ -81,16 +81,6 @@ I have done 2 bouns functions -  line and spray gun.
 > ![](https://i.imgur.com/CTsiTt1.png)
 
 
-### Gitlab page link
+### Website link
 
 https://107062108.gitlab.io/AS_01_WebCanvas
-
-### Others (Optional)
-
-Enjoy the Canvas :)
-
-<style>
-table th{
-    width: 100%;
-}
-</style>
